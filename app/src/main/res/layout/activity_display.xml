@@ -10,7 +10,7 @@
         android:id="@+id/textViewText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="179dp"
+        android:layout_marginStart="192dp"
         android:layout_marginBottom="102dp"
         android:text="Title"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,4 +28,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/screen_background_light" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLOSE"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="667dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

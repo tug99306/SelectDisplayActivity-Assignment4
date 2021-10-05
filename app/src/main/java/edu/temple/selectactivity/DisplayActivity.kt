@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class DisplayActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display)
@@ -22,7 +23,6 @@ class DisplayActivity : AppCompatActivity() {
 
         // Create an intent to pass information to calling activity
         val resultIntent = Intent().putExtra("resultValue", "Second activity closed with Back button")
-        // Set code and data for returned result
         setResult(RESULT_OK, resultIntent)
 
         titleTextView.text = imgDesc
@@ -41,31 +41,4 @@ class DisplayActivity : AppCompatActivity() {
 
 
     }
-
-    override fun onStart() {
-        super.onStart()
-        Log.d("Second activity state", "onStart() fired")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("Second activity state", "onResume() fired")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d("Second activity state", "onPause() fired")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d("Second activity state", "onStop() fired")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("Second activity state", "onDestroy() fired")
-    }
-
-
 }

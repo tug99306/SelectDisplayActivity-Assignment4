@@ -7,15 +7,10 @@ import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.GridLayoutManager
-import edu.temple.selectactivity.ImageAdapter
-import edu.temple.selectactivity.ImageObject
 
 
 class MainActivity : AppCompatActivity() {
 
-    val secondActivityLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-        Log.d("Returned data", it.data?.getStringExtra("resultValue").toString())
-    }
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
@@ -43,7 +38,6 @@ class MainActivity : AppCompatActivity() {
                 secondActivityIntent.putExtra("DESCRIPTION", name)
                 secondActivityIntent.putExtra("IMAGE_ID", img)
                 startActivity(secondActivityIntent)
-                //secondActivityLauncher.launch(secondActivityIntent)
 
             }
 
@@ -55,43 +49,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        // Overriding onRestoreInstanceState() allows you to separate your "initialization" code
-        // from your "restoration" code.
+
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        // This method is used to persist state data before the activity is destroyed by Android,
-        // allowing it to be retrieved when the activity is recreated.
-        // Please items in the Bundle argument and they will be returned when onCreate() and
-        // onRestoreInstanceState() are called.
-        //
+
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.d("Main activity state", "onStart() fired")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("Main activity state", "onResume() fired")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d("Main activity state", "onPause() fired")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d("Main activity state", "onStop() fired")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("Main activity state", "onDestroy() fired")
-    }
 
     }
 

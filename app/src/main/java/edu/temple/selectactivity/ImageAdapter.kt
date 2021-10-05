@@ -17,10 +17,8 @@ class ImageAdapter (var _context: Context, var _imageObjects: Array<ImageObject>
 
 
         fun bind(images: ImageObject, clickListener: (ImageObject) -> Unit) {
-            var title: TextView =  _itemView.findViewById(R.id.title)
             var image: ImageView = _itemView.findViewById(R.id.image)
 
-            title.text = images.description
             image.setImageResource(images.imageId)
             itemView.setOnClickListener { clickListener(images)}
 

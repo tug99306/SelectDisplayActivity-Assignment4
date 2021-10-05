@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         val imageAdapter: ImageAdapter
         val recycler = findViewById<RecyclerView>(R.id.recycler)
-        val nameTextView = findViewById<TextView>(R.id.nameText)
-        val displayImageView = findViewById<ImageView>(R.id.displayImageView)
+        //val nameTextView = findViewById<TextView>(R.id.nameText)
+        //val displayImageView = findViewById<ImageView>(R.id.displayImageView)
 
         val imageArray = arrayOf(
             ImageObject("Eagle", R.drawable.eagle)
@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
             , ImageObject("Turtle Dove", R.drawable.turtledove)
         )
         fun imageItemClicked(images : ImageObject) {
-            nameTextView.text = images.description
-            displayImageView.setImageResource(images.imageId)
+            //nameTextView.text = images.description
+            //displayImageView.setImageResource(images.imageId)
         }
 
         recycler.layoutManager = GridLayoutManager(this,2)

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SelectActivity</string>
+    <string name="app_name">Bird Image Viewer App</string>
     <string name="title">Title</string>
     <string name="close">CLOSE</string>
 

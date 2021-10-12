@@ -10,9 +10,20 @@
         android:id="@+id/recycler"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="105dp"
         android:layout_marginBottom="105dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDirection" />
+
+    <TextView
+        android:id="@+id/textDirection"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginBottom="46dp"
+        android:text="Click an image below to view"
+        app:layout_constraintBottom_toTopOf="@+id/recycler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

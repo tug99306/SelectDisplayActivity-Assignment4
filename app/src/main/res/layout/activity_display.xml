@@ -30,6 +30,7 @@
         android:layout_height="320dp"
         android:layout_marginTop="16dp"
         android:background="#FFFFFF"
+        android:contentDescription="Image Display"
         app:layout_constraintBottom_toTopOf="@+id/textViewText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

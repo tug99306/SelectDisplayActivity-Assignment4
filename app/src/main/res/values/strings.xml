@@ -1,4 +1,12 @@
 <resources>
+    <string-array name = "element_id">
+        <item>textDirection</item>
+        <item>textViewText</item>
+        <item>recycler</item>
+        <item>imageViewDisplay</item>
+        <item>buttonClose</item>
+
+    </string-array>
     <string name="app_name">Bird Image Viewer App</string>
     <string name="title">Title</string>
     <string name="close">CLOSE</string>

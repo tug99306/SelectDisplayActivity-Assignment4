@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "bird_array">
+        <item>Aigle</item>
+        <item>Faucon</item>
+        <item>Inséparable</item>
+        <item>Stella la Chouette</item>
+        <item>Perruche</item>
+        <item>Perroquet</item>
+        <item>Manchote</item>
+        <item>Macareux</item>
+        <item>Pinson des Fraises</item>
+        <item>Tourterelle</item>
+    </string-array>
+    <string name="app_name">Visionneuse d\'images d\'oiseaux</string>
+    <string name="title">Titre</string>
+    <string name="close">Proche</string>
+    <string name="instructions">Cliquez sur une image ci-dessous pour voir</string>
+
+</resources>

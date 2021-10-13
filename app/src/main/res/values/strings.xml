@@ -15,5 +15,6 @@
     <string name="title">Title</string>
     <string name="close">CLOSE</string>
     <string name="instructions">Click an image below to view</string>
+    <string name="image_display">Image Display</string>
 
 </resources>

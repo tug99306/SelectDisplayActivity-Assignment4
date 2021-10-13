@@ -11,9 +11,10 @@
 
     <TextView
         android:id="@+id/textViewText"
-        android:layout_width="409dp"
-        android:layout_height="57dp"
+        android:layout_width="413dp"
+        android:layout_height="111dp"
         android:layout_marginBottom="116dp"
+        android:gravity="center"
         android:text="@string/title"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -30,7 +31,7 @@
         android:layout_height="320dp"
         android:layout_marginTop="16dp"
         android:background="#FFFFFF"
-        android:contentDescription="Image Display"
+        android:contentDescription="@string/image_display"
         app:layout_constraintBottom_toTopOf="@+id/textViewText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,8 +42,8 @@
 
     <Button
         android:id="@+id/buttonClose"
-        android:layout_width="108dp"
-        android:layout_height="50dp"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="60dp"
         android:background="@color/teal_200"
         android:backgroundTint="#FFFFFF"

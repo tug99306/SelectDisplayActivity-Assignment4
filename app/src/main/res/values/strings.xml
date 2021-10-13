@@ -1,14 +1,19 @@
 <resources>
-    <string-array name = "element_id">
-        <item>textDirection</item>
-        <item>textViewText</item>
-        <item>recycler</item>
-        <item>imageViewDisplay</item>
-        <item>buttonClose</item>
-
+    <string-array name = "bird_array">
+        <item>Eagle</item>
+        <item>Hawk</item>
+        <item>Lovebird</item>
+        <item>Stella the Owl</item>
+        <item>Parakeet</item>
+        <item>Parrot</item>
+        <item>Penguin</item>
+        <item>Puffin</item>
+        <item>Strawberry Finch</item>
+        <item>Turtle Dove</item>
     </string-array>
     <string name="app_name">Bird Image Viewer App</string>
     <string name="title">Title</string>
     <string name="close">CLOSE</string>
+    <string name="instructions">Click an image below to view</string>
 
 </resources>

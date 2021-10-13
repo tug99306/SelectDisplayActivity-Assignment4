@@ -22,7 +22,7 @@
         android:layout_height="29dp"
         android:layout_marginTop="93dp"
         android:layout_marginBottom="46dp"
-        android:text="Click an image below to view"
+        android:text="@string/instructions"
         app:layout_constraintBottom_toTopOf="@+id/recycler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

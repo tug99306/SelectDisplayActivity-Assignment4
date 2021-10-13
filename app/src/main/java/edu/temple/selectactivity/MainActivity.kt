@@ -21,16 +21,16 @@ class MainActivity : AppCompatActivity() {
             val recycler = findViewById<RecyclerView>(R.id.recycler)
 
             val imageArray = arrayOf(
-                ImageObject("Eagle", R.drawable.eagle)
-                , ImageObject("Hawk", R.drawable.hawk)
-                , ImageObject("Lovebird", R.drawable.lovebird)
-                , ImageObject("Stella the Owl", R.drawable.owlstellatu)
-                , ImageObject("Parakeet", R.drawable.parakeet)
-                , ImageObject("Parrot", R.drawable.parrot)
-                , ImageObject("Penguin", R.drawable.penguin)
-                , ImageObject("Puffin", R.drawable.puffin)
-                , ImageObject("Strawberry Finch", R.drawable.strawberryfinch)
-                , ImageObject("Turtle Dove", R.drawable.turtledove)
+                ImageObject(resources.getStringArray(R.array.bird_array)[0], R.drawable.eagle)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[1], R.drawable.hawk)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[2], R.drawable.lovebird)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[3], R.drawable.owlstellatu)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[4], R.drawable.parakeet)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[5], R.drawable.parrot)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[6], R.drawable.penguin)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[7], R.drawable.puffin)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[8], R.drawable.strawberryfinch)
+                , ImageObject(resources.getStringArray(R.array.bird_array)[9], R.drawable.turtledove)
             )
             fun imageItemClicked(images : ImageObject) {
                 val name = images.description

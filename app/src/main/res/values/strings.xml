@@ -1,5 +1,5 @@
 <resources>
-    <string-array name = "bird_array">
+    <string-array name="bird_array">
         <item>Eagle</item>
         <item>Hawk</item>
         <item>Lovebird</item>
@@ -16,5 +16,7 @@
     <string name="close">CLOSE</string>
     <string name="instructions">Click an image below to view</string>
     <string name="image_display">Image Display</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

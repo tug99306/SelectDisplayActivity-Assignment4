@@ -28,18 +28,16 @@ class MainActivity : AppCompatActivity(), SelectionFragment.MyInterface {
         //fragment1.changeColor(4)
 
 
-        findViewById<Button>(R.id.changeColorButton).setOnClickListener{
-            //fragment1.changeColor(3)
-            displayFragment.changeColor("blue")
-        }
+
     }
 
     fun myFunction() {
 
     }
 
-    override fun colorSelected(color: String) {
-        displayFragment.changeColor(color)
+
+    override fun imageSelected(images: ImageObject, imageId: Int) {
+        displayFragment.changeImage(images, imageId)
     }
 
 

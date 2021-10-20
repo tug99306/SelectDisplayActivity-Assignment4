@@ -37,7 +37,7 @@ class SelectionFragment : Fragment() {
     fun imageItemClicked(images : ImageObject) {
         val name = images.description
         val img = (images.imageId)
-        (requireActivity() as MyInterface).imageSelected(img, name)
+        (requireActivity() as MyInterface).imageSelected(images, img)
     }
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -58,14 +58,14 @@ class SelectionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-       // changeColor(startupIndex)
+        changeImage(imageArray, startupIndex)
     }
 
-    /*fun changeColor(index: Int?) {
+    fun changeImage(images: Array<ImageObject>, index: Int?) {
         if (index != null) {
-            recycler.setSelection(index)
+            imageItemClicked(images[index])
         }
-    }*/
+    }
 
     companion object {
         fun getInstance(index: Int): SelectionFragment {
@@ -78,6 +78,6 @@ class SelectionFragment : Fragment() {
     }
 
     interface MyInterface {
-        fun imageSelected(imageId: Int, description: String)
+        fun imageSelected(images: ImageObject, imageId: Int)
     }
 }

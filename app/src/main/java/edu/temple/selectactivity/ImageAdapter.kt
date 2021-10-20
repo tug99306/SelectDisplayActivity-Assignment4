@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class ImageAdapter (var _context: Context, var _imageObjects: Array<ImageObject>, val clickListener: (ImageObject) -> Unit) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>()
+class ImageAdapter(var _context: Context, var _imageObjects: Array<ImageObject>, val clickListener: (ImageObject) -> Unit) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>()
 {
 
     val inflater = LayoutInflater.from(_context)
